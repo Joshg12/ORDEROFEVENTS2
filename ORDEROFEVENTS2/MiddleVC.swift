@@ -10,22 +10,26 @@ import UIKit
 class MiddleVC: UIViewController {
     
     var eventNumber: Int = 1
+    
+    
+//    func addEvent(from: String) {
+//        if let existingText = label.text {
+//            label.text = "\(existingText)\nEvent number \(eventNumber) was \(from)"
+//            eventNumber += 1
+//            }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let actualText = MiddleVCLabel.text {
+        }       MiddleVCLabel.text "\(actualtext)inEvent number\(event1)"
+                eventNumber +=1
 
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
