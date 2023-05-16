@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstVC.swift
 //  ORDEROFEVENTS2
 //
 //  Created by Josh on 5/15/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
