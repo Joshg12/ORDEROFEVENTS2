@@ -9,6 +9,7 @@ import UIKit
 
 class MiddleVC: UIViewController {
     
+    @IBOutlet var MiddleVC: UILabel!
     var eventNumber: Int = 1
     
     
@@ -16,18 +17,46 @@ class MiddleVC: UIViewController {
 //        if let existingText = label.text {
 //            label.text = "\(existingText)\nEvent number \(eventNumber) was \(from)"
 //            eventNumber += 1
-//            }
+//           }
     
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func addEvent(from: String) {
+        if let existingText = MiddleVC.text {
+            MiddleVC.text = "\(existingText)\nEvent number \(eventNumber) was \(from)"
+            eventNumber += 1
+        }
         
-        if let actualText = MiddleVCLabel.text {
-        }       MiddleVCLabel.text "\(actualtext)inEvent number\(event1)"
-                eventNumber +=1
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+        }
 
-        // Do any additional setup after loading the view.
+    func viewDidLoad()(_ animated: Bool) {
+        super.viewDidLoad()(animated)
+        addEvent(from: "viewDidLoad()")
+    }
+        
+    func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        addEvent(from: "viewWillAppear")
+    }
+        
+    func viewDidAppear(_:)(_ animated: Bool) {
+        super.viewDidAppear(_:)(animated)
+        addEvent(from: "viewDidAppear(_:)")
+    }
+        
+        func viewWillDisappear(_:)(_ animated: Bool) {
+            super.viewWillDisappear(_:)(animated)
+            addEvent(from: "viewWillDisappear(_:)")
+        }
+        
+        func viewDidDisappear(_:)(_ animated: Bool) {
+            super.viewDidDisappear(_:)(animated)
+            addEvent(from: "viewDidDisappear(_:)")
+        }
+
+
     }
     
 
