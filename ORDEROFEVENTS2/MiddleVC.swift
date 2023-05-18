@@ -26,33 +26,33 @@ class MiddleVC: UIViewController {
             eventNumber += 1
         }
         
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-        }
+    }
+        
+    
+        
 
-    func viewDidLoad()(_ animated: Bool) {
-        super.viewDidLoad()(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         addEvent(from: "viewDidLoad()")
     }
         
-    func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addEvent(from: "viewWillAppear")
     }
         
-    func viewDidAppear(_:)(_ animated: Bool) {
-        super.viewDidAppear(_:)(animated)
+    override func viewDidAppear (_ animated: Bool) {
+        super.viewDidAppear (animated)
         addEvent(from: "viewDidAppear(_:)")
     }
         
-        func viewWillDisappear(_:)(_ animated: Bool) {
-            super.viewWillDisappear(_:)(animated)
+    override func viewWillDisappear (_ animated: Bool) {
+            super.viewWillDisappear (animated)
             addEvent(from: "viewWillDisappear(_:)")
         }
         
-        func viewDidDisappear(_:)(_ animated: Bool) {
-            super.viewDidDisappear(_:)(animated)
+    override func viewDidDisappear (_ animated: Bool) {
+            super.viewDidDisappear (animated)
             addEvent(from: "viewDidDisappear(_:)")
         }
 
@@ -61,4 +61,4 @@ class MiddleVC: UIViewController {
     
 
 
-}
+
